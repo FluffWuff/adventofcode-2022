@@ -1,14 +1,15 @@
 package Day1
 import readFileAsLinesUsingUseLines
 
+lateinit var input: List<String>
+
 fun main() {
+    input = readFileAsLinesUsingUseLines("C:\\Users\\Nutzer\\Desktop\\Developing\\AdvenOfCode\\Kotlin2022\\src\\main\\kotlin\\Day1\\Day1.txt")
     part1()
     part2()
 }
 
 fun part1() {
-    val input = readFileAsLinesUsingUseLines("C:\\Users\\Nutzer\\Desktop\\Developing\\AdvenOfCode\\Kotlin2022\\src\\main\\kotlin\\Day1\\Day1.txt")
-    println(input)
     val calories = mutableListOf<Int>(0)
     var current = 0
     input.forEach {
@@ -20,8 +21,6 @@ fun part1() {
 }
 
 fun part2() {
-    val input = readFileAsLinesUsingUseLines("C:\\Users\\Nutzer\\Desktop\\Developing\\AdvenOfCode\\Kotlin2022\\src\\main\\kotlin\\Day1\\Day1.txt")
-    println(input)
     val calories = mutableListOf<Int>(0)
     var current = 0
     input.forEach {

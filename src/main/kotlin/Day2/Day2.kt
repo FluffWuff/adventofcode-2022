@@ -43,7 +43,6 @@ fun part2() {
             "Z" -> sum += (getMoves(opponent).first + 6)
         }
     }
-    println(sum)
 }
 
 private fun getMoves(action: Int): Pair<Int, Int> {
