@@ -5,7 +5,7 @@ import readFileAsLinesUsingUseLines
 lateinit var input: List<String>
 
 fun main() {
-    input = readFileAsLinesUsingUseLines("C:\\Users\\Nutzer\\Desktop\\Developing\\AdvenOfCode\\Kotlin2022\\src\\main\\kotlin\\Day2\\Day2.txt")
+    input = readFileAsLinesUsingUseLines("C:\\Users\\Nutzer\\Desktop\\Developing\\AdvenOfCode\\2022\\src\\main\\kotlin\\Day2\\Day2.txt")
     part1()
     part2()
 }
