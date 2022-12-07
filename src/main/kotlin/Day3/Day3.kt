@@ -10,7 +10,7 @@ fun main() {
     part2()
 }
 
-fun part1() {
+private fun part1() {
     var sum = 0
     input.forEach {
         val first = it.substring(0..(it.length/2))
@@ -23,7 +23,7 @@ private fun getLetterValue(letter: Char): Int {
     return if(letter.isUpperCase()) letter.code - 38 else letter.code - 96
 }
 
-fun part2() {
+private fun part2() {
     var sum = 0
     for(i in 0 until (input.size/3))
         sum += getLetterValue(input[i*3][input[i*3].indexOfFirst { c -> input[3*i+1].contains(c) && input[3*i+2].contains(c) }])

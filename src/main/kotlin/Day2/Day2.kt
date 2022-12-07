@@ -10,7 +10,7 @@ fun main() {
     part2()
 }
 
-fun part1() {
+private fun part1() {
     var sum = 0
     input.forEach {
         val opponent = getValue(it.split(" ")[0])
@@ -33,7 +33,7 @@ private fun getValue(action: String): Int {
     }
 }
 
-fun part2() {
+private fun part2() {
     var sum = 0
     input.forEach {
         val opponent = getValue(it.split(" ")[0])
